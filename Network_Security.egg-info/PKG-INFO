@@ -1,13 +1,5 @@
-Metadata-Version: 2.4
-Name: Network_Security
+Metadata-Version: 2.1
+Name: Network-Security
 Version: 0.0.1
 Author: Suruchi Virgaonkar
 Author-email: suruchivirgaonkar.cs@gmail.com
-Requires-Dist: python-dotenv
-Requires-Dist: pandas
-Requires-Dist: numpy
-Requires-Dist: pymongo
-Requires-Dist: certifi
-Dynamic: author
-Dynamic: author-email
-Dynamic: requires-dist
