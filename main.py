@@ -1,10 +1,9 @@
 from networkscurity.components.data_ingestion import DataIngestion
 from networkscurity.components.data_validation import DataValidation
-# from networkscurity.components.data_transformation import DataTransformation
+from networkscurity.components.data_transformation import DataTransformation
 from networkscurity.exception.exception import networkscurityException
 from networkscurity.logging.logger import logging
-from networkscurity.entity.config_entity import DataIngestionConfig,DataValidationConfig
-#,DataTransformationConfig
+from networkscurity.entity.config_entity import DataIngestionConfig,DataValidationConfig,DataTransformationConfig
 from networkscurity.entity.config_entity import TrainingPipelineConfig
 
 # from networkscurity.components.model_trainer import ModelTrainer
@@ -29,22 +28,19 @@ if __name__=='__main__':
         logging.info("Data Validation Completed")
         print(data_validation_artifact)
 
+        data_transformation_config=DataTransformationConfig(trainingpipelineconfig)
+        logging.info("data Transformation started")
+        data_transformation=DataTransformation(data_validation_artifact,data_transformation_config)
+        data_transformation_artifact=data_transformation.initiate_data_transformation()
+        print(data_transformation_artifact)
+        logging.info("data Transformation completed")
+
         
 
         
         
-        #
-        # data_validation=DataValidation(dataingestionartifact,data_validation_config)
-        # 
-        # data_validation_artifact=data_validation.initiate_data_validation()
-        # logging.info("data Validation Completed")
-        # print(data_validation_artifact)
-        # data_transformation_config=DataTransformationConfig(trainingpipelineconfig)
-        # logging.info("data Transformation started")
-        # data_transformation=DataTransformation(data_validation_artifact,data_transformation_config)
-        # data_transformation_artifact=data_transformation.initiate_data_transformation()
-        # print(data_transformation_artifact)
-        # logging.info("data Transformation completed")
+       
+        
 
         # logging.info("Model Training sstared")
         # model_trainer_config=ModelTrainerConfig(trainingpipelineconfig)
