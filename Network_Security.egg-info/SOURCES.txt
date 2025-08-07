@@ -22,6 +22,7 @@ networkscurity/exception/exception.py
 networkscurity/logging/__init__.py
 networkscurity/logging/logger.py
 networkscurity/pipeline/__init__.py
+networkscurity/pipeline/batch_prediction.py
 networkscurity/pipeline/training_pipeline.py
 networkscurity/utils/__init__.py
 networkscurity/utils/main_utils/__init__.py

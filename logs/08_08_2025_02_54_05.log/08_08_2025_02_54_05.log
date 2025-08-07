@@ -1,0 +1,25 @@
+[2025-08-08 02:54:08,485 ] 1025 httpx - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-08-08 02:54:08,489 ] 107 dagshub - Accessing as Suruchi264
+[2025-08-08 02:54:09,021 ] 1025 httpx - HTTP Request: GET https://dagshub.com/api/v1/repos/Suruchi264/Network_Security_Data_Science_Project "HTTP/1.1 200 OK"
+[2025-08-08 02:54:09,523 ] 1025 httpx - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-08-08 02:54:09,526 ] 107 dagshub - Initialized MLflow to track repo "Suruchi264/Network_Security_Data_Science_Project"
+[2025-08-08 02:54:09,526 ] 107 dagshub - Repository Suruchi264/Network_Security_Data_Science_Project initialized!
+[2025-08-08 02:54:40,484 ] 43 root - Start data Ingestion
+[2025-08-08 02:54:43,758 ] 65 root - Performed train test split on the dataframe
+[2025-08-08 02:54:43,758 ] 67 root - Exited split_data_as_train_test method of Data_Ingestion class
+[2025-08-08 02:54:43,758 ] 75 root - Exporting train and test file path.
+[2025-08-08 02:54:43,800 ] 84 root - Exported train and test file path.
+[2025-08-08 02:54:43,801 ] 46 root - Data Ingestion completed and artifact: DataIngestionArtifact(trained_file_path='Artifacts\\08_08_2025_02_54_06\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\08_08_2025_02_54_06\\data_ingestion\\ingested\\test.csv')
+[2025-08-08 02:54:43,807 ] 56 root - Initiate the data Validation
+[2025-08-08 02:54:43,919 ] 32 root - Required number of columns:2
+[2025-08-08 02:54:43,920 ] 33 root - Data frame has columns:31
+[2025-08-08 02:54:43,920 ] 32 root - Required number of columns:2
+[2025-08-08 02:54:43,920 ] 33 root - Data frame has columns:31
+[2025-08-08 02:54:44,085 ] 63 root - Entered initiate_data_transformation method of DataTransformation class
+[2025-08-08 02:54:44,085 ] 65 root - Starting data transformation
+[2025-08-08 02:54:44,114 ] 48 root - Entered get_data_trnasformer_object method of Trnasformation class
+[2025-08-08 02:54:44,114 ] 53 root - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2025-08-08 02:54:44,129 ] 46 root - Entered the save_object method of MainUtils class
+[2025-08-08 02:54:44,132 ] 50 root - Exited the save_object method of MainUtils class
+[2025-08-08 02:54:44,132 ] 46 root - Entered the save_object method of MainUtils class
+[2025-08-08 02:54:44,134 ] 50 root - Exited the save_object method of MainUtils class

@@ -23,6 +23,16 @@ from sklearn.ensemble import (
 import mlflow
 
 
+# Set tracking to Dagshub or local server
+# mlflow.set_tracking_uri("https://dagshub.com/<your-username>/<repo>.mlflow")  # If needed
+
+
+import dagshub
+dagshub.init(repo_owner='Suruchi264', repo_name='Network_Security_Data_Science_Project', mlflow=True)
+
+
+
+
 class ModelTrainer:
     def __init__(self, model_trainer_config: ModelTrainerConfig, data_transformation_artifact: DataTransformationArtifact):
         try:
@@ -104,7 +114,7 @@ class ModelTrainer:
         save_object(self.model_trainer_config.trained_model_file_path, obj=final_model)
 
         # Also save separately in final_model folder (optional)
-        save_object("final_model/model.pkl", final_model)
+        save_object("final_model/model.pkl", best_model)
 
         # Prepare artifact
         model_trainer_artifact = ModelTrainerArtifact(
@@ -135,3 +145,6 @@ class ModelTrainer:
 
         except Exception as e:
             raise networkscurityException(e, sys)
+        
+
+

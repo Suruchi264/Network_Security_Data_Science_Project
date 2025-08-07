@@ -4,7 +4,10 @@ numpy
 pymongo
 certifi
 pymongo[srv]>=4.0
+dagshub
 scikit-learn
 dill
 pyaml
 mlflow
+fastapi
+uvicorn

@@ -1,0 +1,29 @@
+[2025-08-08 00:05:12,094 ] 1025 httpx - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-08-08 00:05:12,100 ] 107 dagshub - Accessing as Suruchi264
+[2025-08-08 00:05:12,700 ] 1025 httpx - HTTP Request: GET https://dagshub.com/api/v1/repos/Suruchi264/Network_Security_Data_Science_Project "HTTP/1.1 200 OK"
+[2025-08-08 00:05:13,557 ] 1025 httpx - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-08-08 00:05:13,559 ] 107 dagshub - Initialized MLflow to track repo "Suruchi264/Network_Security_Data_Science_Project"
+[2025-08-08 00:05:13,560 ] 107 dagshub - Repository Suruchi264/Network_Security_Data_Science_Project initialized!
+[2025-08-08 00:05:13,561 ] 20 root - Initiate the data ingestion
+[2025-08-08 00:05:19,183 ] 65 root - Performed train test split on the dataframe
+[2025-08-08 00:05:19,183 ] 67 root - Exited split_data_as_train_test method of Data_Ingestion class
+[2025-08-08 00:05:19,184 ] 75 root - Exporting train and test file path.
+[2025-08-08 00:05:19,263 ] 84 root - Exported train and test file path.
+[2025-08-08 00:05:19,263 ] 22 root - Data Initiation Completed
+[2025-08-08 00:05:19,272 ] 26 root - Initiate the data Validation
+[2025-08-08 00:05:19,381 ] 32 root - Required number of columns:2
+[2025-08-08 00:05:19,381 ] 33 root - Data frame has columns:31
+[2025-08-08 00:05:19,382 ] 32 root - Required number of columns:2
+[2025-08-08 00:05:19,382 ] 33 root - Data frame has columns:31
+[2025-08-08 00:05:19,660 ] 28 root - Data Validation Completed
+[2025-08-08 00:05:19,661 ] 32 root - data Transformation started
+[2025-08-08 00:05:19,661 ] 63 root - Entered initiate_data_transformation method of DataTransformation class
+[2025-08-08 00:05:19,662 ] 65 root - Starting data transformation
+[2025-08-08 00:05:19,704 ] 48 root - Entered get_data_trnasformer_object method of Trnasformation class
+[2025-08-08 00:05:19,704 ] 53 root - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2025-08-08 00:05:19,730 ] 46 root - Entered the save_object method of MainUtils class
+[2025-08-08 00:05:19,739 ] 50 root - Exited the save_object method of MainUtils class
+[2025-08-08 00:05:19,739 ] 46 root - Entered the save_object method of MainUtils class
+[2025-08-08 00:05:19,745 ] 50 root - Exited the save_object method of MainUtils class
+[2025-08-08 00:05:19,748 ] 36 root - data Transformation completed
+[2025-08-08 00:05:19,749 ] 45 root - Model Training sstared
